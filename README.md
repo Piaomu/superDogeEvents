@@ -10,7 +10,7 @@ Write a mortgage loan calculator application that takes in three parameters:
 2. The time over which the loan will be repaid, in months (term)
 3. The percentage rate at which interest will accrue on the loan (rate)
 
-##Instructions
+## Instructions
 
 The output should include the following:
 
