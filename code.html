@@ -1,0 +1,391 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>See the Code | superDogeEvents</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-okaidia.min.css"
+          integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="/css/prism.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+    <header>
+    <!--Insert Menu-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top light-bg">
+        <a class="navbar-brand" href="/index.html"><span>super</span><span class="text-gold">Doge</span><span class="text-purple">Events</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-hover-purple text-gray" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover-purple text-gray" href="/app.html">The App</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/code.html"><span class="sr-only">(current)</span>See the Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover-purple text-gray" href="#" target="_blank">
+                        Get the Code
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-hover-gold text-gray" href="https://kaseywahl.io/about.html" target="_blank">About Kasey</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+<div class="jumbotron jumbotron-fluid header">
+  <div class="container hero">
+    <div>
+        <h1 class="text-light text-center text-shadow">super<span class="text-gold">Doge</span><span class="text-purple">Events</span></h1>
+        <h3 class="text-gold text-center text-shadow">JavaScript coding challenge.</h3>
+    </div>
+  </div>
+</div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 offset-md-2">
+                <div class="accordion" id="scriptMarkUp">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class=" col-12 col-lg-4 offset-lg-4 text-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="explainer-dropdowns">Build Events array</span> 
+                                    </button>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#scriptMarkUp">
+                            <div class="card-body">
+<div id="header-one">
+    <h5>The variable eventsArray is an array of objects that holds the data for each event.</h5>
+</div>
+    <pre class="line-numbers" data-start="1">
+<code class="language-javascript">let eventsArray = [{
+  event: "ComicCon",
+  city: "New York",
+  state: "NY",
+  attendance: 240000,
+  date: "06/01/2017"
+},
+{
+  event: "ComicCon",
+  city: "New York",
+  state: "NY",
+  attendance: 250000,
+  date: "06/01/2018"
+},
+{
+  event: "ComicCon",
+  city: "New York",
+  state: "NY",
+  attendance: 257000,
+  date: "06/01/2019"
+},
+{
+  event: "ComicCon",
+  city: "San Diego",
+  state: "CA",
+  attendance: 150000,
+  date: "06/01/2018"
+},
+{
+  event: "ComicCon",
+  city: "San Diego",
+  state: "CA",
+  attendance: 200000,
+  date: "06/01/2019"
+},
+{
+  event: "ComicCon",
+  city: "San Diego",
+  state: "CA",
+  attendance: 150000,
+  date: "07/01/2019"
+},
+{
+  event: "HeroesCon",
+  city: "Charlotte",
+  state: "North Carolina",
+  attendance: 45000,
+  date: "06/01/2018"
+},
+{
+  event: "HeroesCon",
+  city: "Charlotte",
+  state: "North Carolina",
+  attendance: 50000,
+  date: "06/01/2019"
+},
+];
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class=" col-12 col-lg-4 offset-lg-4 text-center">
+
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="explainer-dropdowns">Build the Dropdown Menu to filter stats by city</span> 
+                                    </button>
+                                </h2>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#scriptMarkUp">
+                            <div class="card-body">
+<div id="header-two">
+    <h5>Creates the dropdown menu and loops through the list of distinct events and creates a list of dropdown anchors based on the event data.</h5>
+</div>
+                                <pre class="line-numbers" data-start="59"><code class="language-js">//the default display is all events
+let filteredEvents = eventsArray;
+
+function buildDropDown() {
+  const eventDD = document.getElementById("eventDropDown");
+  
+  let distinctEvents = [...new Set(eventsArray.map((event) => event.city)) ];
+
+  let linkedHTMLEnd = '<div class="dropdown-divider"></div><a class="dropdown-item" onclick="getEvents(this)" data-string="All"></a>';
+  let resultsHTML = "";
+
+  for(let i = 0; i < distinctEvents.length; i++) {
+
+    resultsHTML += `<a class="dropdown-item" onclick="getEvents(this)" data-string="${distinctEvents[i]}">${distinctEvents[i]}</a>`;
+
+  }
+
+  resultsHTML += linkedHTMLEnd;
+  eventDD.innerHTML = resultsHTML;
+  displayStats();
+}
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class=" col-12 col-lg-4 offset-lg-4 text-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span class="explainer-dropdowns">calculate the stats from events</span>
+                                    </button>
+                                </h2>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#scriptMarkUp">
+                            <div class="card-body">
+                                <div id="header-two">
+    <h5>The displayStats function loops through the array of events and returns the total, average, most, least, and running attendance.</h5>
+    <p><span class="badge text-light bg-purple">Lines 82-86</span> create baseline values before the loop is run.</p>
+    <p><span class="badge text-light bg-purple">Lines 89-90</span> take the attendance from the current object in the array and add it to the aggregate attendance.</p>
+    <p><span class="badge text-light bg-purple">Lines 92-93</span> check if the current value of "most" is less than the current iteration of the loop's attendance. If the current iteration's attendance is higher, "most" is assigned to that value.</p>
+    <p><span class="badge text-light bg-purple">Lines 96-97</span> check if the current value of "least" is greater than the current iteration of the loop's attendance. If the current iteration's attendance is lower (or less than 0), assign the current iteration's value to "least".</p>
+    <p><span class="badge text-light bg-purple">Line 102</span> determines that, after the loop is finished, the average attendance is the total divided by the number of events in the array.</p>
+</div>
+                                <pre class="line-numbers" data-start="81"><code class="language-js">function displayStats() {
+    let total = 0;
+    let average = 0;
+    let most = 0;
+    let least = -1;
+    let currentAttendance = 0;
+
+    for (let i = 0; i < filteredEvents.length; i++) {
+      currentAttendance = filteredEvents[i].attendance;
+      total += currentAttendance;
+
+      if (most < currentAttendance){
+          most = currentAttendance;
+      }
+
+      if (least > currentAttendance || least < 0){
+          least = currentAttendance;
+      }
+
+
+    }
+    average = total / filteredEvents.length;
+    document.getElementById("total").innerHTML = total.toLocaleString();
+    document.getElementById("most").innerHTML = most.toLocaleString();
+    document.getElementById("least").innerHTML = least.toLocaleString();
+    document.getElementById("average").innerHTML = average.toLocaleString(
+      undefined, {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      }
+    );
+  }
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <div class=" col-12 col-lg-4 offset-lg-4 text-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <span class="explainer-dropdowns">Load event list from local storage</span>
+                                    </button>
+                                </h2>
+                            </div>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#scriptMarkUp">
+                            <div class="card-body">
+<div id="header-four">
+    <h5>Retrieve data from local storage and add it to the event list.</h5>
+</div>
+                                <pre class="line-numbers" data-start="116"><code class="language-js">// get the events for the selected city
+function getEvents(element) {
+  let city = element.getAttribute("data-string");
+  let curEvents = JSON.parse(localStorage.getItem("eventsArray")) || eventsArray;
+  filteredEvents = curEvents;
+  document.getElementById("statsHeader").innerHTML = `Stats For ${city} Events`;
+  if(city != "All"){
+    filteredEvents = curEvents.filter(function (event){
+      if(event.city == city) {
+        return event;
+      }
+    });
+  }
+  displayStats();
+}
+
+loadEventList();
+
+function loadEventList() {
+  let eventList = [];
+  eventList = getData();
+  displayData(eventList);
+}
+
+//Retrieve data from local storage
+function getData(){
+  let eventList = JSON.parse(localStorage.getItem("eventsArray")) || [];
+
+  if (eventList.length == 0) {
+    eventList = eventsArray;
+    localStorage.setItem("eventsArray", JSON.stringify(eventList));
+  }
+  return eventList;
+}
+
+function saveEventData() {
+  //grab the events out of local storage or create a new eventsArray
+  let eventList = JSON.parse(localStorage.getItem("eventsArray")) || eventsArray;
+
+  //create the address object from user-given data
+  let obj = {};
+  obj["event"] = document.getElementById("newEvent").value;
+  obj["city"] = document.getElementById("newCity").value;
+  obj["state"] = document.getElementById("newState").value;
+  obj["attendance"] = parseInt(document.getElementById("newAttendance").value,
+  10);
+  obj["date"] = new Date(
+    document.getElementById("newEventDate").value
+  ).toLocaleDateString();
+
+  //tells the computer to push the object into the array.
+  eventList.push(obj);
+
+  localStorage.setItem("eventsArray", JSON.stringify(eventList));
+
+  //Accesss the values from the form by ID and add an object to the array.
+  displayData(eventList);
+}
+</code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <div class=" col-12 col-lg-4 offset-lg-4 text-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-cf btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <span class="explainer-dropdowns">Append data to the table</span>
+                                    </button>
+                                </h2>
+                            </div>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#scriptMarkUp">
+                            <div class="card-body">
+<div id="header-five">
+    <h5>I leverage the HTML template tag to create a dynamic table that lengthens as more data is added to it.</h5>
+</div>
+                                <pre class="line-numbers" data-start="175"><code class="language-js">function displayData(eventList) {
+  const template = document.getElementById("Data-template");
+  const resultsBody = document.getElementById("resultsBody");
+  
+  //clear table first
+  resultsBody.innerHTML = "";
+  for(let i = 0; i < eventList.length; i++) {
+    const dataRow = document.importNode(template.content, true);
+
+    dataRow.getElementById("event").textContent = eventList[i].event;
+    dataRow.getElementById("city").textContent = eventList[i].city;
+    dataRow.getElementById("state").textContent = eventList[i].state;
+    dataRow.getElementById("attendance").textContent = eventList[i].attendance;
+    dataRow.getElementById("date").textContent = new Date(eventList[i].date).toLocaleDateString();
+
+    resultsBody.appendChild(dataRow);
+  }
+}
+                        </code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr />
+    <footer class="footer light-bg">
+      <div class="container light-bg">
+          <div class="text-light text-center light-bg">
+            <h4>Get in touch with <a class="text-gold portfolio-link" href="https://kaseywahl.io/contact.html">Kasey</a>!</h4>
+    <p class="text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> Kasey Wahl</p>
+  </div>
+      </div>
+    </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"
+            integrity="sha512-WkVkkoB31AoI9DAk6SEEEyacH9etQXKUov4JRRuM1Y681VsTq7jYgrRw06cbP6Io7kPsKx+tLFpH/HXZSZ2YEQ==" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/line-numbers/prism-line-numbers.min.js"
+            integrity="sha512-1oLZvExT5RaW4q2GgvRPf+XzVVGmsKirfZBRN7aifdOpvZ1L9idEncfMFlfHiQNGBA+Sev+alscSAT/xQ0rwXA==" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
