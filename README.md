@@ -1,5 +1,5 @@
 # superDogeEvents
-[Live Demo](https://sad-noether-0f0dc3.netlify.app/) |
+[Live Demo](https://sad-noether-0f0dc3.netlify.app/app.html) |
 [Portfolio](https://kaseywahl.io/)
 
 ![superdogeevents](https://user-images.githubusercontent.com/77030627/115621523-40d22f80-a2bc-11eb-81a1-117350c606b9.png)
