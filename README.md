@@ -1,22 +1,26 @@
 # superDogeEvents
-[Live Demo](https://sad-noether-0f0dc3.netlify.app/) |
+[Live Demo](https://sad-noether-0f0dc3.netlify.app/app.html) |
 [Portfolio](https://kaseywahl.io/)
 
-## Objective
+![superdogeevents](https://user-images.githubusercontent.com/77030627/115621523-40d22f80-a2bc-11eb-81a1-117350c606b9.png)
+---
 
-Write a mortgage loan calculator application that takes in three parameters:
+## Description
 
-1. The amount of money loaned in dollars (balance)
-2. The time over which the loan will be repaid, in months (term)
-3. The percentage rate at which interest will accrue on the loan (rate)
+This application allows the user to input, display, and organize event data.
 
-## Instructions
 
-The output should include the following:
+## Parameters of the Project
 
-1. The month (1 corresponding to the 1st month of payment, through the total number of months)
-2. The payment amount
-3. The principal paid this month
-4. The interest paid this month
-5. The total interest paid to date
-6. The remaining loan balance at the end of the month
+Given an array of event data objects, display the following:
+1. Total attendance by city
+2. Average attendance by city
+3. Least-attended event by city
+4. Most-attended event by city
+5. Display the stats for ALL events
+
+## Additional Functionality
+
+1. Create a feature that allows the user to add additional events to the array.
+2. Store the events in local storage.
+3. Create a feature that allows the user to sort events by city.
